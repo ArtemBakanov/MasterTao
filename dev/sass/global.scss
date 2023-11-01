@@ -2,7 +2,9 @@
     color: $text-color;
     background-color: $color-secondary;
 }
-
+*{
+    // font-family: Proxima Nova;
+}
 
 body {
     background-color: $bg-primary;
@@ -104,7 +106,8 @@ ul {
 }
 
 .container-xxl {
-    max-width: 1850px; /*or 1820px???? =)*/
+    max-width: 1850px;
+    padding: 0;
 }
 
 .wf-300 {
@@ -188,6 +191,12 @@ ul {
         }
     }
 }
+// [type="file"] {
+   
+//         +label {
+//             border: 1px dashed;
+//         }
+//     }
 
 .btn {
     font-weight: 600;
@@ -513,6 +522,26 @@ section {
 }
 
 .input-box {
+    .fileLabel{
+       border-radius: 10px; 
+       border: 1px dashed rgba(255, 255, 255, 0.26);
+       padding: 12px 93px;
+       text-align: center;
+       margin-top: 12px;
+       width: 100%;
+       transition: 0.2s;
+       &:hover {
+        box-shadow: 0px 0px 4px 2px $color-primary;
+       }
+   
+       &:focus {
+           box-shadow: 0px 0px 4px 2px $color-secondary;
+       }
+   
+       &::placeholder {
+           color: #CBCBCB;
+       }
+    }
     margin-bottom: 19px;
     display: flex;
     flex-direction: column;
@@ -552,7 +581,21 @@ section {
         }
     }
 }
-
+.calculation{
+    .calc-decoration{
+        z-index: 1;
+        position: relative;
+        top: -752px;
+        left: 598.5px;
+    }
+}
+.calculation-form{
+    background-color: #363A4D;
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 626px;
+    max-height: 597px;
+}
 .padding {
     padding-top: 21px; /*для .input-column */
 }

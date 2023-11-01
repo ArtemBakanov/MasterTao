@@ -1,14 +1,54 @@
 header {
+    .nav-btn-1{
+        width: 171px;
+        height: 50px;
+        border-radius: 90px;
+        background: #E58D35;
+        color: #ffff;
+        justify-content: center;
+    }
+    .nav-btn-1:hover{
+        background-color: #89C249;
+        color: #ffff;
+    }
+    .navbar-nav{
+        margin: 0 auto;
+        max-width: 602px;
+        padding: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(254 254 254);
+    }
+    .navbar-brand{
+        margin-right: 0;;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+    .navbar{
+        padding-top: 39px;
+        padding-bottom: 25px;
+    }
+    .container{
+        max-width: 1140px;
+        width: 100%;
+        padding: 0;
+    }
+    .nav-link{
+        padding: 0 10px;
+    } 
     .navbar {
         padding-top: 25px;
         padding-bottom: 39px;
     }
-
+     
     .navbar-brand {
         padding: 0;
         margin: 0;
     }
-
+     
     .navbar-light {
         .navbar-nav {
 			margin: 5px auto 0;
@@ -18,27 +58,70 @@ header {
 
             .nav-link {
                 color: #fff;
-
+                text-align: center;
                 &:hover {
                     color: $color-secondary;
                 }
+            }
+        }
+        .navbar-toggler{
+            border-color: transparent;
+            &:focus{
+                box-shadow: none;
             }
         }
         .navbar-toggler-icon {
             background-image: none;
         }
     }
-
-    .navbar-toggler{
-        &:focus {
-            box-shadow: none;
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+         background-color: #fff;
+    }
+    .hamburger .hamburger-inner,
+    .hamburger .hamburger-inner::before,
+    .hamburger .hamburger-inner::after {
+         background-color: #fff;
+    }
+    .navbar-collapse.collapse.show{
+        padding-bottom: 60px;
+        margin-top: 18.58px;
+        font-size: 24px;
+        background-color: #363A4D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .nav-btn-1{
+            width: 295px;
+            height: 68px;
+            justify-content: center;
         }
-
+        .navbar-nav{
+            padding-top: 37px;
+        }
+        .nav-item{
+            margin-bottom: 37px;
+         }
     }
-    .btn {
-        padding: 13px 22px;
-    }
-    .navbar-collapse {
-        text-align: center;
+    .navbar-collapse.collapsing{
+        padding-bottom: 60px;
+        margin-top: 18.58px;
+        font-size: 24px;
+        background-color: #363A4D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .nav-btn-1{
+            width: 295px;
+            height: 68px;
+            justify-content: center;
+        }
+        .navbar-nav{
+            padding-top: 37px;
+        }
+        .nav-item{
+            margin-bottom: 37px;
+         }
     }
 }

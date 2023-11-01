@@ -15,13 +15,13 @@
 .first-screen-slider {
     .container {
         padding-top: 164px;
-        padding-bottom: 228px;
+        padding-bottom: 92px;
     }
 
     .slick-slide {
-        border-radius: 20px;
         background-size: cover;
         background-repeat: no-repeat;
+        padding-bottom: 0;
     }
 
     .slick-dots {

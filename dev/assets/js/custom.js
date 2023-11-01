@@ -3,6 +3,21 @@ $(document).ready(function() {
     $('.first-screen-slider').slick({
         dots: true,
         appendArrows: '.first-screen-nav',
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: true,
+                dots: true
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
 
     // $('.first-screen').slick({
@@ -66,8 +81,9 @@ $('.carousel-template').each(function () {
                }
             },
             {
-                breakpoint: 955,
+                breakpoint: 991,
                 settings: {
+                  arrows: false,
                   slidesToShow: 1,
                  }
             },
@@ -93,11 +109,11 @@ burger.addEventListener('click', function() {
 
  
 
-// document.getElementById('fileInput').onchange = function () {
-//     //short name
-//     // document.getElementById('file-name').innerHTML = this.files[0].name;
-//     document.getElementById('file-name').innerHTML = this.value;
-// };
+document.getElementById('fileInput').onchange = function () {
+    //short name
+    // document.getElementById('file-name').innerHTML = this.files[0].name;
+    document.getElementById('file-name').innerHTML = this.value;
+};
 
  
 // const checkButtons = document.querySelectorAll('.check-button');
