@@ -491,7 +491,7 @@ section {
         transform: translate(-50%, 0);
         width: 85px;
         height: 2px;
-        background-color: $color-secondary;
+        background-color: $color-primary;
     }
 
     
@@ -611,4 +611,35 @@ section {
 .has-checkbox {
     margin-bottom: 6px;  /*для input-box*/
 }
-  
+
+#advantages-slider{
+    margin-bottom: -48px;
+    .advantage{
+        margin-bottom: 48px;
+    }
+    .advantage__img-box{
+        width: 113px;
+        height: 113px;
+        border-radius: 50%;
+        border: 1px solid #6C7188;
+        padding: 10px; 
+        box-shadow: 0px 4px 13px 0px rgba(30, 35, 66, 0.11);
+        margin: 0 auto 22px; 
+        img{
+            background-color: #89C249;
+            object-fit: scale-down;
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+    .advantage__text-box{
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 124.5%; 
+        max-width: 263px;
+        margin: 0 auto;
+    }
+}

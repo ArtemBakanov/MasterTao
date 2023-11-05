@@ -36,7 +36,7 @@ $(document).ready(function() {
     // $('.first-screen').append($('.first-screen-nav'));
 
 
-    mobileOnlySlider("#advanages-slider", true, false, 991);
+    mobileOnlySlider("#advantages-slider", true, false, 991);
 
     function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
         var slider = $($slidername);

@@ -7,18 +7,27 @@
         .navbar{
             padding-bottom: 0px;
             padding-top: 18px;
-            padding-bottom: 18.58px;
+            // padding-right: 14px;
+            // padding-left: 20px;
+            .container{
+                padding-right: 0px;
+                padding-left: 0px;
+            }
         }
         .navbar-brand{
+            padding-bottom: 18.58px;
+            padding-left: 20px;
             .brand-img{
                 max-width: 126px;
                 max-height: 35.4px;
             }
         }
         .navbar-toggler{ 
+            padding-right: 14px;
             .hamburger-box{
                 height: 27px;
                 width: 27px;
+                margin-bottom: 12px;
                 .hamburger-inner{
                     width: 27.5px;
                     height: 2px;
@@ -55,11 +64,16 @@
             max-height: 44px;
         }
             .slick-slide{
-                height: calc(100vh - 82.58px);
+                height: calc(100vh - 71.97px);
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+            }
+            .first-screen-slider {
+                .container {
+                    padding-bottom: 52px;
+                }
             }
     }  
     .calculation{ 
@@ -128,4 +142,19 @@
         display: flex;
         justify-content: center;
     }
+     section{
+        margin-bottom: 60px;
+        &.container-fluid {    
+            .container{
+                width: 100%;
+                padding: 0;
+            } 
+            &:before {
+                border-radius: 0;
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+        }
+}
 }
