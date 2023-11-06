@@ -114,10 +114,10 @@
                 &:after {
                     content: "";
                     position: static;
-                    display: inline-block;
+                    display: block;
                     width: 85px;
                     height: 2px;
-                    margin: 10px 145px 10px 145px;
+                    margin: 23px auto -3px auto;
                     background-color: $color-secondary;
                     font-size: 24px;
                 }
