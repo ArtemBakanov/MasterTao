@@ -65,39 +65,79 @@ $(document).ready(function() {
 
  
     // Выбираем все элементы с классом 'carousel-template' и для каждого из них выполняем следующую функцию
-$('.carousel-template').each(function () {
-    var slider = $(this); // Получаем текущий элемент с классом 'carousel-template' и сохраняем его в переменной slider
+// $('.carousel-template').each(function () {
+//     var slider = $(this); // Получаем текущий элемент с классом 'carousel-template' и сохраняем его в переменной slider
     
-    // Инициализируем плагин Slick Carousel для текущего элемента
-    slider.slick({
-        infinite: true, // Бесконечная прокрутка карусели
-        slidesToShow: 3, // Отображать 3 слайда одновременно
-        slidesToScroll: 1, // Прокручивать по 1 слайду за раз
-         responsive: [
-            {
-              breakpoint: 1346,
-              settings: {
-                slidesToShow: 2,
-               }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                  arrows: false,
-                  slidesToShow: 1,
-                 }
-            },
-            {
-                breakpoint:600,
-                settings: {
-                  slidesToShow: 1,
-                  dots: true,
-                  arrows: false,
-                 }
-            },
-        ]
-    });
-});
+//     // Инициализируем плагин Slick Carousel для текущего элемента
+//     slider.slick({
+//         infinite: true, // Бесконечная прокрутка карусели
+//         slidesToShow: 3, // Отображать 3 слайда одновременно
+//         slidesToScroll: 1, // Прокручивать по 1 слайду за раз
+//          responsive: [
+//             {
+//               breakpoint: 1346,
+//               settings: {
+//                 slidesToShow: 2,
+//                }
+//             },
+//             {
+//                 breakpoint: 991,
+//                 settings: {
+//                   arrows: false,
+//                   slidesToShow: 1,
+//                  }
+//             },
+//             {
+//                 breakpoint:600,
+//                 settings: {
+//                   slidesToShow: 1,
+//                   dots: true,
+//                   arrows: false,
+//                  }
+//             },
+//         ]
+//     });
+// });
+$('.delivery-slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
 });
 
 const burger = document.querySelector('.hamburger');

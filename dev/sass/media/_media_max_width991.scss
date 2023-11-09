@@ -23,11 +23,11 @@
             }
         }
         .navbar-toggler{ 
-            padding-right: 14px;
+            padding-right: 20px;
             .hamburger-box{
                 height: 27px;
                 width: 27px;
-                margin-bottom: 12px;
+                margin-bottom: 14px;
                 .hamburger-inner{
                     width: 27.5px;
                     height: 2px;
@@ -43,6 +43,7 @@
             }
         }
     }
+
     .first-screen{
         .container{
             text-align: center;
@@ -156,5 +157,11 @@
                 right: 0;
             }
         }
+}
+.delivery{
+    &-slider{
+        max-width: 365px;
+        margin: 0 auto;
+    }
 }
 }

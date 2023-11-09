@@ -8,3 +8,21 @@
         } 
     } 
 }
+@media screen and (max-width: 1350px) {
+    .delivery{
+        &-slider{
+            max-width: 780px;
+            margin: 0 auto;
+        }
+    }
+}
+@media screen and (max-width: 1399px) {
+    .delivery{
+        .slick-prev{
+            left: -85px;
+        }
+        .slick-next{
+            right: -85px;
+        }
+    }
+}
