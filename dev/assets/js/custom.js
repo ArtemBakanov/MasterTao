@@ -98,7 +98,7 @@ $(document).ready(function() {
 //         ]
 //     });
 // });
-$('.delivery-slider').slick({
+$('.template-slider').slick({
     dots: false,
     arrows: true,
     infinite: true,
