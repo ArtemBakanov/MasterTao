@@ -1,0 +1,167 @@
+.questions{
+    .container{
+        max-width: 1175px;
+        .accordion{
+            max-width: 716px;
+            display: inline-block;
+            margin-right: 17px;
+            .accordion-item{
+                margin-top: 16px;
+                border: 1px solid #3A444E;
+                border-radius: 10px;
+                // overflow: hidden;    
+                max-width: 716px;
+                width: 100%;
+                max-height: 152px;
+                .accordion-collapse.collapse.show{
+                    // max-height: 88px !important;
+                    .accordion-body{
+                        padding: 0 99px 21px 34px;
+                        background-color: #FFF;
+                        box-shadow: 5px 15px 40px 0px rgba(11, 24, 97, 0.32);
+                        max-height: 88px !important;
+                        // border-radius: 0 0 10px 10px;
+                        .accordion-body-text{
+                            color: #282B38;
+                            font-size: 17px;
+                            font-weight: 300;
+                            line-height: 144.5%;
+                            margin: 0;
+                        }
+                    }
+                }
+                .accordion-collapse.collapsing{
+                    max-height: 88px !important;
+                    .accordion-body{
+                        padding: 0 99px 21px 34px;
+                        background-color: #FFF;
+                        box-shadow: 5px 15px 40px 0px rgba(11, 24, 97, 0.32);
+                        // border-radius: 0 0 10px 10px;
+                        .accordion-body-text{
+                            color: #282B38;
+                            font-size: 17px;
+                            font-weight: 300;
+                            line-height: 144.5%;
+                            vertical-align: text-top;
+                        }
+                    }
+                }
+                .accordion-button{
+                    padding: 21px 0 21px 34px;
+                    background-color: #FFF;
+                    box-shadow: 5px 15px 40px 0px rgba(11, 24, 97, 0.32);
+                    box-shadow: none;
+                    max-height: 64px;
+                    max-width: 716px;
+                    width: 100%;
+                    // height: 100%;
+                    .accordion-btn-text{
+                       color: #282B38;
+                       font-size: 18px;
+                       font-weight: 700;
+                       line-height: 124.5%;
+                       padding: 0;
+                       margin-bottom: 0;
+                    }
+                }
+                .accordion-button.collapsed{
+                    background-color: #282B38;       
+                    .accordion-btn-text{
+                        color: #FFF;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 124.5%;
+                        padding: 0;
+                        margin-bottom: 0;
+                        max-height: 75px;
+                     }
+                }
+                .accordion-button::after {   
+                    background-size: auto;
+                    background-position: center;
+                    width: 27px;
+                    height: 27px;
+                    transform: rotate(360deg);
+                    margin-right: 19px;
+                    box-shadow: none;
+                    background-image: url("assets/img/arrow-circle-left 2.png");
+                }
+                .accordion-button:not(.collapsed)::after {
+                    background-size: auto;
+                    background-position: center;
+                    transform: rotate(270deg);
+                    margin-right: 19px;
+                    box-shadow: none;
+                    background-image:url("assets/img/arrow-circle-left 1.png");
+                }
+            }       
+        }
+        .cont-form{
+            max-width: 390px;
+            width: 100%;
+            display: inline-flex;
+            justify-self: start;
+            height: 553px;
+            vertical-align: top;
+            margin-left: 17px;
+            .question-form{
+                background-color: #363A4D;
+                border-radius: 20px;
+                padding: 38px 40px;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                filter: drop-shadow(5px 15px 40px rgba(11, 24, 97, 0.32));
+                .row{
+                    max-width: 310px;
+                    margin-left: auto;
+                    margin-right: auto;
+                   .input-box{
+                       width: 100%;
+                       max-width: 310px;
+                       height: 56px;
+                       border-radius: 10px;
+                       background: #FFF;
+                       margin-bottom: 14px;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       position: relative;
+                       border: none;
+                           &::placeholder {
+                               color: #CBCBCB;
+                           }
+                           &:focus-visible {
+                               outline: none;
+                           }             
+                           &:hover {
+                               box-shadow: 0px 0px 4px 2px $color-primary;
+                           }
+                
+                           &:focus {
+                               box-shadow: 0px 0px 4px 2px $color-secondary;
+                           }
+                   }
+                   .question-form-text{
+                       padding: 0;
+                       align-items: start;
+                       .question-form-title{
+                           color: #FFF;
+                           font-size: 24px;
+                           font-weight: 700;
+                           line-height: 126%;
+                           margin-bottom: 8px;
+                       }
+                       .question-form-subtitle{
+                           color: #FFF;
+                           font-size: 17px;
+                           font-weight: 300;
+                           line-height: 126%;
+                           margin-bottom: 23px;
+                       }
+                   }
+                }
+            }
+        }
+    }
+}

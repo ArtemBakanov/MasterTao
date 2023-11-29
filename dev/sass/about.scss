@@ -1,0 +1,40 @@
+.about{
+    .container{
+        margin-top: 152px;
+        padding: 0 28px;
+        display: flex;
+        flex-direction: row;
+        .about-image{
+            width: 50%;
+            height: 550px;
+            margin-left: 35px;
+            margin-top: -8px;
+            img{
+                width: 100%;
+                max-width: 550px;
+                // position: relative;
+                // top: 0px;
+                // left: 0px;
+            }
+        }
+        .text-part{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 50%;
+            .template-title {
+                &:after {
+                    background-color: $color-secondary;
+                    transform: translate(-140%, 0%);
+                }
+                margin-bottom: 65px;
+            }
+            p{
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 170%;
+            }
+        }
+    }
+}
