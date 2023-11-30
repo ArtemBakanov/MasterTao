@@ -67,9 +67,7 @@
                         // max-height: none !important;
                     }
                     .accordion-collapse.collapse.show{
-                        max-height: 92px !important;
                         .accordion-body{
-                            max-height: 92px !important;
                             padding: 0px 15px 12px 22px;
                             background-color: #FFF;
                             box-shadow: 5px 15px 40px 0px rgba(11, 24, 97, 0.32);
@@ -84,12 +82,10 @@
                         }
                     }
                     .accordion-collapse.collapsing{
-                        max-height: 92px !important;
                         .accordion-body{                            
                             padding: 0px 15px 12px 22px;
                             background-color: #FFF;
                             box-shadow: 5px 15px 40px 0px rgba(11, 24, 97, 0.32);
-                            max-height: 92px !important;
                             // border-radius: 0 0 10px 10px;
                             .accordion-body-text{
                                 color: #282B38;
