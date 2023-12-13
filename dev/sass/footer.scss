@@ -1,6 +1,88 @@
 footer{
     height: 100px;
     margin-top: auto;
+    .container{
+        .template-title{
+            margin-bottom: 40px;
+            max-width: 1140px;
+            &:after{
+                background-color: $color-primary;
+                max-width: 1140px;
+                width: 100%;
+            }
+        }
+        .content-part{
+            display: flex;
+            flex-direction: row;
+            .info-column{
+                max-width: 263px;
+                width: 100%;
+                .navbar-brand{
+                    .brand-img{
+                        margin-bottom: 28.65px;
+                    }
+                }
+                .footer-adress{
+                    p{
+                        margin-bottom: 8px;
+                        color: #FFF;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 162.5%;
+                    }
+                }
+                .nav-icons{
+                    display: flex;
+                    flex-direction: row;
+                     .nav-icon{
+                          width: 33px;
+                          height: 33px;
+                          border-radius: 50%;
+                          overflow: hidden;
+                          cursor: pointer;
+                     }
+                }
+            }
+            .links-columns{
+                margin-right: 81px;
+                max-width: 706px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .link-column{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .link-column-title{
+                        margin-bottom: 14px;
+                         h2{
+                             color: #FFF;
+                             font-size: 20px;
+                             font-weight: 700;
+                             line-height: 146%;
+                         }
+                    }
+                    .footer-link{
+                        margin-bottom: 10.75px;
+                         a{
+                            color: #85899C;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 160.5%;
+                            text-decoration-line: underline;
+                            &:hover{
+                                color: $color-primary;
+                            }
+                            &:active{
+                                color: $color-primary;
+                            }
+                         }
+                    }
+                }
+            }
+        }
+    }
 }
 
  
